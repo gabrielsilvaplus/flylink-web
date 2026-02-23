@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>flylink-web</title>
+  <meta name="description" content="FlyLink - Encurtador de URLs moderno e rápido." />
+  <meta property="og:title" content="FlyLink" />
+  <meta property="og:description" content="FlyLink - Encurtador de URLs moderno e rápido." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flylink-web.vercel.app/" />
+  <meta property="og:image" content="https://flylink-web.vercel.app/vite.svg" />
+  <style>
+    /* Critical CSS to prevent FOUC */
+    html {
+      background-color: #09090b;
+    }
+
+    html:not(.dark) {
+      background-color: #ffffff;
+    }
+  </style>
+  <script>
+    (function () {
+      try {
+        var storageKey = 'vite-ui-theme';
+        var theme = localStorage.getItem(storageKey);
+        var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+        if (!theme && supportDarkMode) {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
