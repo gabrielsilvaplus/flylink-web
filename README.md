@@ -1,15 +1,13 @@
 # FlyLink Web 🚀
 
-> Uma interface rápida, componentizada e focada em conversão para um encurtador de URLs moderno.
+> **A interface frontend do FlyLink: Rápida, Componentizada e focada em Clean Code.**
 
 [![React](https://img.shields.io/badge/React-19-blue?logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-A ideia aqui não foi só fazer "mais um tela de CRUD". O objetivo desse front-end foi aplicar uma mentalidade de **Product Engineer**: a performance, a acessibilidade e a experiência de quem usa importam tanto quanto o código por trás. 
-
-Usei esse projeto como laboratório para arquiteturas escaláveis e padrões consolidados do mercado (como o Feature-Sliced Design adaptado).
+Desenvolvi este frontend com o objetivo de consumir a API RESTful do FlyLink, aplicando boas práticas de desenvolvimento web moderno. O foco principal foi garantir uma arquitetura escalável, tipagem forte e uma excelente experiência tanto para o usuário quanto para o desenvolvedor.
 
 ---
 
